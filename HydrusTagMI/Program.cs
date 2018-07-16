@@ -9,7 +9,7 @@ namespace HydrusTagMI
   {
     static int[] tags;
     static SQLiteConnection db;
-    static string tag = "17"; // tag id or *
+    static string tag = "*"; // tag id or *
     static int min_p_x_y = 10; // lower limit of Pxy, -1 to disable
     static int min_x_or_y = -1; // lower limit of Px and Py, -1 to disable
     static int processing_limit = -1; // count of tags to process, -1 to all
