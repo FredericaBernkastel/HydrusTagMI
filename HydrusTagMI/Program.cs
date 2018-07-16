@@ -89,7 +89,7 @@ namespace HydrusTagMI
       };
 
       if (tag == "*") //iterate through all tags
-        for (int i = 0; i < ((processing_limit > -1) ? processing_limit : tags.Length); i++)
+        for (int i = 0; i < ((processing_limit > -1) ? Math.Min(processing_limit, tags.Length) : tags.Length); i++)
           calculate(tags[i], true);
       else
         calculate(int.Parse(tag), false); //single tag
